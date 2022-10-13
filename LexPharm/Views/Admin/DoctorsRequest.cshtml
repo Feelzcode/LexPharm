@@ -1,0 +1,52 @@
+﻿
+@{ ViewData["Title"] = "DoctorsRequest";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h1 class="text-primary text-center">Doctor's Request</h1>
+        </div>
+    </div>
+
+
+    @*if (A != null && Model.Count() > 0)
+        {*@
+    <table class="table-bordered table-striped" style="width:100%;">
+        <thead>
+            <tr>
+                <th>NameOfDoctor</th>
+                <th>BrandName</th>
+                <th>GenericName</th>
+                <th>Dosage</th>
+                <th>Form</th>
+
+            </tr>
+
+            @*</thead>
+                foreach (var obj in Model)*@
+            {
+        <tbody>
+            <tr>
+                <td>NameOfDoctor</td>
+                <td>BrandName</td>
+                <td>GenericName</td>
+                <td>Dosage</td>
+                <td>Form</td>
+                <td class="text-center">
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-controller="MyRegistrationForm" asp-route-Id="obj.Id" asp-action="AddDrug" class="btn btn-primary mx-2"><i class="bi bi-pencil-square"></i>Add-Drug</a>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        }
+
+
+
+    </table>
+
+</div>

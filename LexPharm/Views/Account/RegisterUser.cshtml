@@ -1,0 +1,74 @@
+﻿@model LexPharm.ViewModel.ApplicationUserViewModel
+
+@{
+    ViewData["Title"] = "RegisterUser Page";
+}
+<partial name="_Notification" />
+
+<div class="container-fluid wrapper hero_section">
+    <form class="form-signup p-3  " method="post" asp-controller="Account" asp-action="RegisterUser">
+        <h2 class="text-center text-warning">Register</h2>
+        <div class="card-header text-center"><a class="text-center font-weight-bold text-capitalize text-warning" asp-area="" asp-controller="Account" asp-action="RegisterDoctor">Sign-Up! </a><span class="text-light"> as Doctor</span></div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="firstname" id="firstName" asp-for="FirstName" />
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Lastname" asp-for="LastName" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="phone number" asp-for="PhoneNumber" />
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Nationality" asp-for="Nationality" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" name="Username" class="form-control" value="Username" asp-for="UserName" />
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Address" id="address" asp-for="Address" />
+        </div>
+
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="email" id="email" asp-for="Email" />
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="passsword" id="passWord" asp-for="Password" />
+        </div>
+
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Confirm passsword" id="confirmPassWord" asp-for="ConfirmPassword" />
+        </div>
+
+        <div class="form-group mb-2">
+
+
+
+
+            <select class="select form-control" required asp-for="Gender" asp-items="@(new SelectList( ViewBag.gender,"Id", "Name"))"></select>
+
+        </div>
+
+
+        <div class="form-group mb-5">
+            <label>
+                <input type="checkbox" name="name" />
+                i accept the   <a href="#">Term of Use</a> & <a href="">Privacy Policy</a>
+            </label>
+
+            <button type="submit" role="button" class=" form-control  btn-grad mt-2">Submit</button>
+
+        </div>
+
+       
+
+    </form>
+</div>

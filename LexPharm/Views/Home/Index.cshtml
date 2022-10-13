@@ -1,0 +1,469 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!--Carousel starts here-->
+<div id="demo" class="carousel slide" data-ride="carousel ">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="container-fluid carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/slide1.png" alt="Los Angeles" height="500" style="width:100%;">
+        </div>
+        <div class="carousel-item">
+            <img src="images/slide2.jpg" alt="Chicago" height="500" style="width:100%;" />
+        </div>
+        <div class="carousel-item  im">
+            <img src="images/slide3.png" alt="New York" width="1100" height="500" style="width:100%;">
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+<!--Carousel ends here-->
+
+<div class="container-fluid " @*data-aos="fade-up"*@ >
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <div class="card card-effect">
+                <img src="./images/card1.jpg">
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-warning text-light bg-danger" role="button"><i class="fa fa-shopping-basket text-dark" aria-hidden="true"></i>Meet a doctor!</a>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card card-effect">
+                <img src="./images/image4.jpg">
+
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-warning text-light bg-danger" role="button"><i class="fa fa-shopping-basket text-dark" aria-hidden="true"></i>Shop now</a>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4">
+            <div class="card card-effect">
+                <img src="./images/card2.jpg">
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-warning text-light bg-danger" role="button"><i class="fa fa-shopping-basket text-dark" aria-hidden="true"></i>Shop now</a>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+<!-- card ends here -->
+<div class="container-fluid mt-3 data-aos="fade-up"">
+    <div class="row justify-content-center">
+        <div class="col-lg-3 m-5">
+            <div class="card card-effect mb-3 service">
+                <div class="card-body text-center">
+                    <div class="text-center">
+                        <img src="./images/icon-cart2.png" alt="Alternate Text" style="width:150px;height:150px;" class="hvr-wobble-horizontal" />
+                    </div>
+
+                    <h5 class="card-title font-weight-bold">New Product</h5>
+
+                    <p class="card-text">
+                        Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 m-5">
+            <div class="card card-effect mb-3 service">
+                <div class="card-body text-center">
+                    <div class="text-center">
+                        <img src="./images/box-icon.png" alt="Alternate Text" style="width:150px;height:150px;" class="hvr-wobble-horizontal" />
+                    </div>
+                    <h5 class="card-title font-weight-bold">Best Treatment</h5>
+                    <p>
+                        Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 m-5">
+            <div class="card card-effect mb-3 service">
+                <div class="card-body text-center">
+                    <div class="text-center">
+                        <img src="./images/community2.png" alt="Alternate Text" style="width:140px;height:140px;" class="hvr-wobble-horizontal" />
+                    </div>
+                    <h5 class="card-title font-weight-bold">Join Our Community</h5>
+
+                    <p class="card-text">
+                        Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- another row -->
+
+        <div class="row mt-5 justify-content-center">
+            <div class=" col-lg-3 m-5 shadow-2xl bg-white">
+                <div class="card card-effect mb-3 service">
+                    <div class="card-body text-center">
+                        <div class="text-center">
+                            <img src="./images/pay.png" alt="Alternate Text" style="width:140px;height:140px;" class="hvr-wobble-horizontal" />
+                        </div>
+                        <h5 class="card-title font-weight-bold">Our Payment System</h5>
+                        <p class="card-text">
+                            Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 m-5 shadow-none p-2 mb-2 bg-white">
+                <div class="card card-effect mb-3 service">
+                    <div class="card-body text-center">
+                        <div class="text-center">
+                            <img src="./images/consult-doctor.png" alt="Alternate Text" style="width:160px;height:150px;" class="hvr-wobble-horizontal" />
+                        </div>
+                        <h5 class="card-title font-weight-bold">Consult a Doctor</h5>
+                        <p>
+                            Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 m-5 shadow-none p-2 mb-2">
+                <div class="card card-effect mb-3 service">
+                    <div class="card-body text-center">
+                        <div class="text-center">
+                            <img src="./images/checkIn.png" alt="Alternate Text" style="width:140px;height:140px;" class="hvr-wobble-horizontal" />
+                        </div>
+                        <h5 class="card-title font-weight-bold">Check In</h5>
+                        <p class="card-text">
+                            Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- features -->
+
+<div class="container-fluid mt-5" id="features ">
+    <div class="row">
+        <div class="col-lg-6">
+
+            <div class="img pb-5 mb-3 "><img src="./images/feature.jpg" class="w-100 h-80 pb-3"> </div>
+        </div>
+
+        <div class="col-lg-6 justify-content-center p-3">
+            <div class="centa p-3 text-center">
+                <h5 class="card-title display-4 text-primary ">Consult Professional Doctors</h5>
+                <p class="card-text lead">
+                    Lorem ipsum dolor sit amet, consectetur     adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                </p>
+                <a href="" class="card-link text-dark border border-primary p-3 pt-2 mt-3 hvr-wobble-horizontal" role="button">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="img-fluid" id="danfod">
+    <div class="row">
+        <div class="col-lg-5 ml-auto text-white text-center say">
+
+            <h3 class="p-1 mt-3 ml-3">Say No To Drug Abuse</h3>
+            <p class="card-text mt-2 p-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing   elit,       sed   do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a class="btn btn-info ml-4 " role="button">Read More</a>
+
+
+        </div>
+    </div>
+</div>
+<!--services-->
+
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-lg-3 text-center">
+            <div class=" card card-effect">
+                <h6>Starter</h6>
+                <h1 class="border-bottom">$99</h1>
+                <img src="./images/bottle8.jpg">
+                <button type="button" class="btn btn-danger">purchase</button>
+            </div>
+        </div>
+
+
+        <div class="col-lg-3 text-center">
+            <div class="card card-effect">
+                <h6>Starter</h6>
+                <h1 class="border-bottom">$99</h1>
+                <img src="./images/bottle5.jpg">
+                <button type="button" class="btn btn-danger">purchase</button>
+            </div>
+        </div>
+
+
+
+        <div class="col-lg-3 text-center">
+            <div class="card card-effect">
+                <h6>Starter</h6>
+                <h1 class="border-bottom">$99</h1>
+                <img src="./images/bottle3.jpg">
+                <button type="button" class="btn btn-danger">purchase</button>
+            </div>
+        </div>
+
+
+
+        <div class="col-lg-3 text-center">
+            <div class="card card-effect">
+                <h6>Starter</h6>
+                <h1 class="border-bottom">$99</h1>
+                <img src="./images/bottle10.jpg">
+                <button type="button" class="btn btn-danger">purchase</button>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+
+    <div class="row mt-5">
+        <div class="col-lg-3 text-center">
+            <div class=" card card-effect">
+                <h6>Starter</h6>
+                <img src="./images/bottle7.jpg">
+                <button type="button" class="btn btn-danger">purchase</button>
+            </div>
+        </div>
+
+
+        <div class="col-lg-3 text-center">
+            <div class="card card-effect">
+                <h6>Starter</h6>
+                <h1 class="border-bottom">$99</h1>
+                <img src="./images/bottle9.jpg">
+                <button type="button" class="btn btn-danger">purchase</button>
+            </div>
+        </div>
+
+
+
+        <div class="col-lg-3 text-center">
+            <div class="card card-effect">
+                <h6>Starter</h6>
+                <h1 class="border-bottom">$99</h1>
+                <img src="./images/bottle11.jpg">
+                <button type="button" class="btn btn-danger">purchase</button>
+            </div>
+        </div>
+
+
+
+        <div class="col-lg-3 text-center">
+            <div class="card card-effect">
+                <h6>Starter</h6>
+                <h1 class="border-bottom">$99</h1>
+                <img src="./images/bottle2.jpg">
+                <button type="button" class="btn btn-danger">purchase</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--product ends here-->
+<section class="team">
+
+    <!---->
+    <div class="container-fluid data-aos="fade-up"">
+
+        <h2 class="title text-center mb-5 team display-3">Our Team</h2>
+        <div class="row padding justify-content-around">
+            <div class="col-lg-3">
+                <div class="card">
+                    <img class="img-responsive" src="./images/10.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">John doe</h4>
+                        <p class="card-text">The Company CEO</p>
+                        <a href="" class="btn btn-primary">Profile</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3">
+                <div class="card">
+                    <img class="img-responsive" src="./images/9.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Mary Jo</h4>
+                        <p class="card-text">The Human Resource Manager</p>
+                        <a href="" class="btn btn-primary">Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card">
+                    <img class="img-responsive" src="./images/8.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Phil Ho</h4>
+                        <p class="card-text">Pharmacist</p>
+                        <a href="" class="btn btn-primary">Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+<div class="container-fluid mt-4 testimonial-sec">
+    <div class="testimonial">
+        <h1 class="text-center text-primary pb-3 display-3">Testimonial</h1>
+        <p class="text-center pb-5 display-5 lead">
+            What our Customers have To Say
+        </p>
+    </div>
+    <div class="row justify-content-around">
+
+        <div class="col-lg-3">
+            <div class="card p-3">
+                <div class="d-flex align-content-center">
+                    <img class="rad" src="../images/testimonials-1.jpg" style="width:50px; height:50px;">
+                    <h4 class="font-weight-bold">Chris Benjamin</h4>
+                </div>
+                <div class="card-body">
+                    <p class='text-sm mt-3 text-gray-600'>
+                        My experience when a doctor showed up at my home for a doctor-house-call went smooth
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card p-3">
+                <div class="d-flex align-content-center">
+                    <img class="rad" src="../images/testimonials-2.jpg" style="width:50px; height:50px;">
+                    <h4 class="font-weight-bold">Sarah martins</h4>
+                </div>
+                <div class="card-body">
+                    <p class='text-sm mt-3 text-gray-600 lead'>
+                        My experience when a doctor showed up at my home for a doctor-house-call went smooth
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card p-3">
+                <div class="d-flex align-content-center">
+                    <img class="rad" src="../images/testimonials-3.jpg" style="width:50px; height:50px;">
+                    <h4 class="font-weight-bold">Peter book</h4>
+                </div>
+                <div class="card-body">
+                    <p class='text-sm mt-3 text-gray-600 lead'>
+                        My experience when a doctor showed up at my home for a doctor-house-call went smooth
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        @*<div class="col-lg-3 md-3 sm-12">
+                <div class="box2 p-2 box0">
+                    <center>
+                        <img class="rad" src="./images/profile-2.jpg">
+                    </center>
+                    <div class="mt-2 text-center">
+                        <h6 class="text-center">IT</h6>
+                        <p class="text-center">khalid mex</p>
+                    </div>
+                    <div class="social text-center mt-4">
+                        <a class="" href=""><i class="fa fa-facebook fa-2x" aria-hidden="true" style="color:red"></i></a>
+                        <a class="" href=""><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color:red"></i></a>
+                        <a class="" href=""><i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color:red"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 md-3 sm-12">
+                <div class="box3 p-2 box0">
+                    <center>
+                        <img class="rad" src="./images/profile-3.jpg">
+                    </center>
+                    <div class="mt-2">
+                        <h6 class="text-center">HR</h6>
+                        <p class="text-center">demo kelly</p>
+                    </div>
+                    <div class="social text-center mt-4">
+                        <a class="" href=""><i class="fa fa-facebook fa-2x" aria-hidden="true" style="color:red"></i></a>
+                        <a class="" href=""><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color:red"></i></a>
+                        <a class="" href=""><i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color:red"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 md-3 sm-12">
+                <div class="box4 p-2 box0">
+                    <center>
+                        <img class="rad" src="./images/profile-4.jpg">
+                    </center>
+                    <div class="mt-2">
+                        <h6 class="text-center">DR</h6>
+                        <p class="text-center">kenny bri</p>
+                    </div>
+                    <div class="social text-center mt-4">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a class="" href=""><i class="fa fa-facebook fa-2x" aria-hidden="true" style="color:red"></i></a>
+                        <a class="" href=""><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color:red"></i></a>
+                        <a class="" href=""><i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color:red"></i></a>
+                    </div>
+                </div>
+            </div>*@
+    </div>
+</div>
+
+
+
+@*<div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>*@

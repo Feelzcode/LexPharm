@@ -1,0 +1,73 @@
+﻿@model LexPharm.ViewModel.ApplicationUserViewModel
+
+@{
+    ViewData["Title"] = "RegisterDoctor Page";
+}
+<partial name="_Notification" />
+<div class="container-fluid wrapper hero">
+    <form class="form-signup p-3 " method="post" asp-controller="Account" asp-action="RegisterDoctor" enctype="multipart/form-data">
+        <h2 class="text-center text-warning">Doctor's Registration</h2>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" name="Firstname" class="form-control" placeholder="firstname" asp-for="FirstName" />
+                </div>
+                <div class="col-md-6">
+                    <input type="text" name="Lastname" class="form-control" placeholder="Lastname" asp-for="LastName" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" name="Username" class="form-control" placeholder="Username" asp-for="UserName" />
+        </div>
+        <div class="form-group">
+            <input type="text" name="Address" class="form-control" placeholder="" asp-for="Address" />
+        </div>
+        <div class="form-group">
+            <input type="text" name="medicalField" class="form-control" placeholder="Medical field" asp-for="MedicalField" />
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="phone number" asp-for="PhoneNumber" />
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Nationality" asp-for="Nationality" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6 d-flex">
+                     <select class="select form-control" required asp-for="Gender" asp-items="@(new SelectList( ViewBag.gender,"Id", "Name"))"></select>
+                </div>
+                <div class="col-md-6">
+                     <input type="file" asp-for="ImageUrl" required>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="email" asp-for="Email" />
+        </div>
+        <div class="form-group">
+            <input type="password" name="password" class="form-control" placeholder="passsword" asp-for="Password" />
+        </div>
+        <div class="form-group">
+            <input type="password" name="ConfirmPassword" class="form-control" placeholder="Confirm passsword" asp-for="ConfirmPassword" />
+        </div>
+
+
+        <button type="submit" role="button" class=" mt-3 form-control btn-grad ">Submit</button>
+
+        <div class="form-group">
+            <label>
+                <input type="checkbox" name="name" />
+                i accept the   <a href="#">Term of Use</a> & <a href="">Privacy Policy</a>
+            </label>
+
+        </div>
+
+    </form>
+</div>

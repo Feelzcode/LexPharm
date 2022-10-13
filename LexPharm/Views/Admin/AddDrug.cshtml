@@ -1,0 +1,69 @@
+﻿@model LexPharm.ViewModel.DrugViewModel
+@{ ViewData["Title"] = "Add Drugs";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container back  p-3">
+    
+            <h2 class="text-center">Add Drug</h2>
+            <form method="post" asp-controller="Admin" asp-action="AddDrug" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-lg-5">
+
+                        <div class="form-group">
+                            <label for="">Brand Name</label>
+                            <input type="text" placeholder="brand name" class="form-control" asp-for="BrandName" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Generic Name</label>
+                            <input type="text" placeholder="generic name" class="form-control" asp-for="Generic" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Dosage</label>
+                            <input type="text" placeholder="dosage" class="form-control" asp-for="dosage" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Form</label>
+                            <input type="text" placeholder="drug name" class="form-control" asp-for="Form" />
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+
+
+                        <div class="form-group">
+                            <label>Product No</label>
+                            <input type="text" placeholder="Product No" class="form-control" asp-for="ProductNo" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Expiry Date</label>
+                            <input type="text" placeholder="Expiry date" class="form-control" asp-for="ExpiryDate" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Price</label>
+                            <input type="text" placeholder="Price" class="form-control" asp-for="Price" />
+                        </div>
+
+                        <div class="col-md-6 mt-3 mr-2">
+                            <input type="file" asp-for="ImageUrl" required>
+                        </div>
+                    </div>
+                </div>
+
+               <button type="submit" role="button" class=" mt-3 form-control btn-grad w-50 mx-auto ">Submit</button>
+         </form>
+
+
+
+        @*<div class="col-6">
+            <img src="~/images/background.png" alt="Alternate Text" style=""/>
+        </div>*@
+
+
+   
+    </div>

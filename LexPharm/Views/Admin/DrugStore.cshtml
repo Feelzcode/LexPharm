@@ -1,0 +1,38 @@
+﻿@model    IEnumerable<LexPharm.Models.Drugs>
+@{ ViewData["Title"] = "Application Page";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h1 class="text-primary">Drug Store</h1>
+        </div>
+
+    </div>
+
+    @if (Model.Count() > 0)
+    {
+        <div class="row">
+
+            @foreach (var obj in Model)
+            {
+                <div class="col-lg-3 text-center">
+                    <div class=" card card-effect">
+                        <img src="@obj.drugImages" style="width:50%;">
+                        <h6>@obj.Generic</h6>
+                        <h1 class="border-bottom">@obj.Price</h1>
+                        <button type="button" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                </div>
+            }
+
+        </div>
+    }
+    else
+    {
+        <div class="container">
+            <h3 class="text-center">No Record Found</h3>
+       </div>
+    }

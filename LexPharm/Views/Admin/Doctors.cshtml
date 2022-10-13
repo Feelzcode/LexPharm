@@ -1,0 +1,45 @@
+﻿@model IEnumerable<LexPharm.Models.ApplicationUser>
+@{ ViewData["Title"] = "Application Page";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h2 style="text-align:center">Doctor's Profile</h2>
+@if (Model.Count() > 0) { 
+
+    <div class="container-fluid">
+        <div class="row">
+            @foreach (var doc in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="@doc.ProfilePicture" alt="John" style="width:100%">
+                        <h1>@doc.FirstName</h1>
+                        <p class="title">@doc.MedicalField</p>
+                        <p>@doc.Address</p>
+                        <div style="margin: 24px 0;">
+                            <a class="social"><i class="fa fa-dribbble"></i></a>
+                            <a class="social"><i class="fa fa-twitter"></i></a>
+                            <a class="social"><i class="fa fa-linkedin"></i></a>
+                            <a class="social"><i class="fa fa-facebook"></i></a>
+                        </div>
+                        <p><button asp-action="Verify">Consult Doctor</button></p>
+                        
+
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+
+                    </div>
+                </div>
+        }
+   </div>
+</div>
+}
+else
+{
+    <div class="container">
+        <h3 class="text-center">No Record Found</h3>
+    </div>
+}
